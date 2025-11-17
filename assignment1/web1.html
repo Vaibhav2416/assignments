@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            min-height: 97vh;
+            width: 100%;
+            /* border:2px solid red; */
+            display: flex;
+            flex-direction: column;
+
+           
+        }
+        #container > div {
+            width: 90%;
+            /* border: 2px solid green; */
+            margin: auto;
+            min-height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .logo{
+            border: 2px solid red;
+        }
+        #header input{
+            width: 400px;
+            border-radius: 8px;
+
+        }
+        .header_div{
+            border:1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: azure;
+            
+        }
+        #middle {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #middle div{
+            /* border: 2px solid blue; */
+            width: 350px;
+            justify-content: center;
+            display: flex;
+            height: 300px;
+            align-items: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div>
+                <img class="logo" src="images/logo.png" alt="">
+            </div>
+            <div>
+                <input type="text" placeholder="Please enter text here">
+                <button>Submit</button>
+            </div>
+            <div>
+                <select name="" id="">
+                    <option value="">See Offers</option>
+                    <option value="">One</option>
+                    <option value="">Two</option>
+                </select>
+            </div>
+            <div class="header_div">Login</div>
+            <div class="header_div">Downloads</div>
+        </div>
+
+        <div id="middle">
+            <div>
+                <img src="images/image1.png" width="200px" alt="">
+            </div>
+            <div>
+                 Lenovo L-Series 60.96 cm (24 inch) Full HD LED Backlit IPS Panel with 99% sRGB, 1xHDMI1.4, 1xVGA,
+                 Tilt-able Stand, 3WX2 Inbuilt Speakers, Customization Artery, Smart Display Monitor (L24i-4A)  
+                 (Response Time: 1 ms, 100 Hz Refresh Rate)
+            </div>
+            <div>
+                <form action="">
+                    <h3>Login Form</h3>
+                    <input type="text" name="username" id="">
+                    <input type="text" name="email">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        
+        <div>Copyrights HTML/CSS/Javascript @ 2025</div>
+    </div>
+</body>
+</html>

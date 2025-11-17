@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="image">
+            
+        </div>
+        <div>
+            <button onclick="nextbutton()">Next</button>
+            <button onclick="previousbutton()">Previos</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    arr=["images/img1.png","images/img2.png","images/img3.png"]
+    let i=0
+    
+    function nextbutton(){
+        if(i!=arr.length-1){
+            img=document.getElementById("image").innerHTML=`<img src=${arr[i]} alt="">`
+            i++
+        }
+        else{
+            i=0
+        }
+    }
+    function previousbutton(){
+        if(i!=0){
+            img=document.getElementById("image").innerHTML=`<img src=${arr[i]} alt="">`
+            i--
+        }
+        else{
+            i=0
+        }
+    }
+
+</script>
